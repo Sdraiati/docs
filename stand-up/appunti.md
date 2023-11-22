@@ -1,0 +1,61 @@
+# Schermate
+
+## Homepage
+
+descrizione del prodotto:  
+un sito per la gestione delle finanze personali (e.g. scontrini, eventualmente 
+ripetizioni, paghette ed elemosine)
+
+## Analisi dei dati
+- import da csv
+- imposta budget
+- entrate e uscite
+
+facoltativo:
+- scansione di uno scontrino
+- condivisione dei dati
+
+## Login
+- per terze parti
+
+## Profilo
+- nome utente / mail
+- cambio dati (mail)
+- cancella account (con conferma)
+
+## Grafici
+- imposta categoria / sottocategoria: l'utente imposta le categorie
+- filtri per la categoria
+- canvas
+
+### Problema
+- accessibilità dei grafici
+
+## Utente
+- profilo
+
+## Organizzazioni
+- profilo dell'organizzazione
+- lista di utenti che hanno l'accesso
+
+
+# Backlog
+
+## Volta dopo
+- requisiti
+
+
+## MVP
+
+- 7 pagine html
+- ``<C-p>`` per formattare la pagina per la stampa
+- scelta dei colori (sensata)
+
+# Membri
+
+| Name | Surname | GitHub Profile |
+| - | - | - |
+| Leonardo | Basso | [bassupreme](https://github.com/bassupreme) |
+| Simone | Caregnato | [simocare](https://github.com/simocare) |
+| Carlo | Rosso | [danesinoo](https://github.com/danesinoo) |
+| Eghosa | | |
