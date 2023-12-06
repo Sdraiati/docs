@@ -93,7 +93,27 @@ class Canvas {
 		this.proportion = flag
 	}
 
-	grid(max) {
+	font(font) {
+		this.ctx.font = font
+		return this
+	}
+
+	fillStyle(fillStyle) {
+		this.ctx.fillStyle = fillStyle
+		return this
+	}
+
+	fillText(text, x, y) {
+		if (this.proportion) {
+			x = this.proportion_x(x)
+			y = this.proportion_y(y)
+		}
+		this.ctx.fillText(text, x + 10, y - 10)
+	}
+
+	// Horizonatal lines and text
+	grid(max, min) {
+		min = min - min % 3
 		max = max - max % 3
 
 		let oldLineWidth = this.ctx.lineWidth
@@ -113,20 +133,44 @@ class Canvas {
 			[1, 1 / 3]],
 		]
 
+		// draw the decorations lines
 		for (let i = 0; i < decorations.length; i++) {
 			this.lines(decorations[i])
 		}
 
+		// calculate the decorations text
+		let middle_description = max * 2 / 3
+		let bottom_description = max / 3
+
+		this.font('2em Arial')
+		this.fillStyle('grey')
+
+		if (min < 0) {
+			// the zero in not in the bottom
+			let zero = -min / (max - min)
+			middle_description = (max - min) * 2 / 3 + min
+			bottom_description = (max - min) / 3 + min
+
+			// draw the bottom text
+			this.fillText(min, 0, 0)
+
+			// draw the zero line
+			this.setStrokeStyle('red')
+			this.setLineWidth(2)
+			this.lines([[0, zero], [1, zero]])
+
+			// draw the zero text
+			this.fillStyle('red')
+			this.fillText(0, 0, zero)
+		}
+
+		this.fillStyle('gray')
+		this.fillText(bottom_description, 0, 1 / 3)
+		this.fillText(middle_description, 0, 2 / 3)
+		this.fillText(max, 0, 1)
+
 		this.setLineWidth(oldLineWidth)
 			.setStrokeStyle(oldStrokeStyle)
-
-		let pad = 10
-
-		this.ctx.font = '2em Arial'
-		this.ctx.fillStyle = 'gray'
-		this.ctx.fillText(max / 3, this.proportion_x(0) + pad, this.proportion_y(1 / 3) - pad)
-		this.ctx.fillText(max / 3 * 2, this.proportion_x(0) + pad, this.proportion_y(2 / 3) - pad)
-		this.ctx.fillText(max, this.proportion_x(0) + pad, this.proportion_y(1) - pad)
 	}
 
 	// I get the x proportion from the left

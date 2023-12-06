@@ -107,17 +107,18 @@ ctx_tre.stroke()
 const spese = new Spese('tecnologiche')
 
 spese.fromPoints([
-	[0, 1000],
+	[0, -1000],
 	[1, -100],
 	[2, 50],
-	[3, 200],
-	[5, 0],
-	[4, -400],
-	[6, 600],
+	[3, 0],
+	[5, -1000],
+	[100, -400],
+	[6, 6000],
 	[7, 700],
 	[8, -800],
 	[9, 900],
 	[10, -1000]
+	//[x, y]
 ])
 
 let quattro = new Canvas('quattro')
@@ -130,10 +131,11 @@ quattro.setStrokeStyle('blue')
 	.setLineWidth(2)
 
 quattro
-	.setAxis(1 / 20, 1 / 20) // set the origin of the axis (x, y)
+	.setAxis(1 / 40, 1 / 5) // set the origin of the axis (x, y)
 	.axisLineWidth(4) // set the line width of the axis
 	.axisStrokeStyle('black') // set the line color of the axis
 	.drawAxis()
 
+let x = parseInt(spese.getMin())
 quattro.lines(spese.toPoints())
-	.grid(Math.floor(spese.getMax()))
+quattro.grid(Math.floor(spese.getMax()), x)

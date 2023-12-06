@@ -21,6 +21,12 @@ class Spese {
 	}
 
 	toPoints() {
+		let min = this.getMin()
+		if (min < 0) {
+			for (let i = 0; i < this.data.length; i++) {
+				this.data[i][1] -= min
+			}
+		}
 		let max = this.getMax()
 		return this.data.map((line, i) => {
 			return [i / (this.data.length - 1), line[1] / max]
@@ -29,6 +35,10 @@ class Spese {
 
 	getMax() {
 		return Math.max(...this.data.map(line => line[1]))
+	}
+
+	getMin() {
+		return Math.min(...this.data.map(line => line[1]))
 	}
 }
 
