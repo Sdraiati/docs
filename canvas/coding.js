@@ -61,9 +61,7 @@ uno_bis.setWidth(uno_w)
 	.setHeight(uno_h)
 	.withProportion(true)
 
-uno_bis.beginPath()
-	.lines(points)
-	.stroke()
+uno_bis.lines(points)
 
 ///
 /// DUE
