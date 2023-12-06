@@ -52,21 +52,16 @@ class Canvas {
 
 
 	drawAxis() {
-		let x = this.axis[0] * this.canvas.width
-		let y = (1 - this.axis[1]) * this.canvas.height
+		let x = [[0, 0], [1, 0]]
+		let y = [[0, 0], [0, 1]]
 		let oldLineWidth = this.ctx.lineWidth
 		let oldStrokeStyle = this.ctx.strokeStyle
 
 		this.setLineWidth(this.axisLineWidth)
 			.setStrokeStyle(this.axisStrokeStyle)
 
-		this.beginPath()
-		this.ctx.moveTo(x, y)
-		this.ctx.lineTo((1 - this.axis[0]) * this.canvas.width, y)
-		this.ctx.stroke()
-		this.ctx.moveTo(x, y)
-		this.ctx.lineTo(x, this.axis[1] * this.canvas.height)
-		this.ctx.stroke()
+		this.lines(x)
+		this.lines(y)
 
 		this.setLineWidth(oldLineWidth)
 			.setStrokeStyle(oldStrokeStyle)
@@ -75,19 +70,8 @@ class Canvas {
 	lines(points) {
 		if (this.proportion) {
 			for (let i = 0; i < points.length; i++) {
-
-				// create the axis-x padding
-				points[i][0] = points[i][0] * (1 - this.axis[0] * 2) + this.axis[0]
-
-				// invert the y axis to have the origin in the bottom left corner
-				points[i][1] = 1 - points[i][1]
-
-				// create the axis-y padding
-				points[i][1] = points[i][1] * (1 - this.axis[1] * 2) + this.axis[1]
-
-				// scale the points to the canvas size
-				points[i][0] *= this.canvas.width
-				points[i][1] *= this.canvas.height
+				points[i][0] = this.proportion_x(points[i][0])
+				points[i][1] = this.proportion_y(points[i][1])
 			}
 		}
 
@@ -110,7 +94,7 @@ class Canvas {
 	}
 
 	grid(max) {
-		max = max - max %3
+		max = max - max % 3
 
 		let oldLineWidth = this.ctx.lineWidth
 		let oldStrokeStyle = this.ctx.strokeStyle
