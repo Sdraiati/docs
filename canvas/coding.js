@@ -137,5 +137,3 @@ quattro
 
 quattro.lines(spese.toPoints())
 	.grid(Math.floor(spese.getMax()))
-
-console.log(Math.round(spese.getMax()))
