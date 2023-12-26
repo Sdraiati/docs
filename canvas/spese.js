@@ -27,10 +27,23 @@ class Spese {
 				this.data[i][1] -= min
 			}
 		}
+
 		let max = this.getMax()
-		return this.data.map((line, i) => {
+		let raw_pts = this.data.map((line, i) => {
 			return [i / (this.data.length - 1), line[1] / max]
 		})
+
+		let pts = []
+		let i = 0
+		const current_date = new Date()
+		const starting_date = new Date(this.data[0][0])
+		while (starting_date < current_date) {
+			if (this.data[i][0] === starting_date.toISOString().slice(0, 10)) {
+				i++
+			}
+			pts.push(raw_pts[i])
+		}
+		return (pts, this.data[0][0])
 	}
 
 	getMax() {
