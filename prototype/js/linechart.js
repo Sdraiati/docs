@@ -131,13 +131,13 @@ class LineChart {
 		return x
 	}
 
-	hover(spese, mouseX) {
+	hover(points, mouseX) {
 		if (mouseX === -1) {
 			return
 		}
 
-		let index = nearestPoint(spese.points, mouseX)
-		let point = spese.points[index]
+		let index = nearestPoint(points, mouseX)
+		let point = points[index]
 		let dashedPoints =
 			[
 				[point[0], 0],
@@ -147,30 +147,30 @@ class LineChart {
 
 		this.dashedLines(dashedPoints)
 
-		this.text(`${spese.amount(i)}`, 0, point[1])
-		this.text(`${spese.date(i)}`, point[0], 0)
+		this.text(`${point[1]}`, 0, point[1])
+		this.text(`${point[0]}`, point[0], 0)
 	}
 
-	drawLineChart(spese) {
+	drawLineChart(points) {
 
-		if (spese.len() < 1) {
+		if (points.lenght < 1) {
 			return
 		}
 
 		this.drawAxis()
-		this.decorations(10, -4, 'grey', 1)
+		this.decorations(10, 4, 'grey', 1)
 
-		this.lines(spese.points, 'black', 1)
+		this.lines(points, 'black', 1)
 
 		this.canvas.addEventListener('mousemove', (event) => {
 			this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
 			this.drawAxis()
-			this.decorations(10, -4, 'grey', 1)
+			this.decorations(10, 4, 'grey', 1)
 
-			this.lines(spese.points, 'black', 1)
+			this.lines(points, 'black', 1)
 
-			this.hover(spese, this.whereIsMouse(event.clientX))
+			this.hover(points, this.whereIsMouse(event.clientX))
 		})
 	}
 }
