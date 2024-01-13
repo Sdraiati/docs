@@ -1,4 +1,4 @@
-import LineChart from './linechart.js';
+import { Chart } from './histogram.js'
 
 const points = [
 	[1 / 11, 1 / 10],
@@ -14,16 +14,28 @@ const points = [
 	[11 / 11, 5 / 10]
 ]
 
-let line_chart = new LineChart('line-chart')
-line_chart.setAxis(0.1, 0.1)
+let chart = new Chart('line-chart')
+chart.setAxis(0.1, 0.1)
 
-line_chart.drawLineChart(points)
+chart.drawAxis()
+chart.decorations(10, 4, 'grey', 1)
 
+chart.lines(points)
 
-/*
-ctx.beginPath()
-ctx.moveTo(0, 0)
-ctx.lineTo(20, 20)
-ctx.lineTo(10, 10)
-ctx.stroke()
-*/
+points.forEach((point) => {
+	chart.drawRect(point[0], point[1], 1 / points.length, 1 / 10, 'grey')
+})
+
+chart.canvas.addEventListener('mousemove', (event) => {
+	// redraw everything all over to delete the previous hover
+	chart.clear();
+
+	chart.decorations(10, 4, 'grey', 1)
+
+	points.forEach((point) => {
+		chart.drawRect(point[0], point[1], 1 / points.length, 1 / 10, 'grey')
+	})
+	chart.lines(points)
+
+	chart.hover(points, event.clientX)
+})
