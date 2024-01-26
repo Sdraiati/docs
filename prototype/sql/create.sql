@@ -21,7 +21,7 @@ CREATE TABLE `db_app_techweb`.`movimento` (
     `id_project` INT NOT NULL , 
     `data` DATETIME NOT NULL , 
     `importo` FLOAT NOT NULL , 
-    `descrizione` TEXT NOT NULL , 
+    `descrizione` TEXT, 
     PRIMARY KEY (`id_project`, `data`),
     FOREIGN KEY (`id_project`) REFERENCES (`project`.`id`),
 );
@@ -29,7 +29,8 @@ CREATE TABLE `db_app_techweb`.`movimento` (
 -- creazione della relazione tag
 CREATE TABLE `db_app_techweb`.`tag` (
     `nome` VARCHAR(255) NOT NULL, 
-    `id_project` INT NOT NULL
+    `id_project` INT NOT NULL,
+    `descrizione` TEXT , 
     PRIMARY KEY (`nome`, `id_project`),
     FOREIGN KEY (`id_project`) REFERENCES (`project`.`id`)
 );
@@ -43,11 +44,3 @@ CREATE TABLE `db_app_techweb`.`tag_project` (
     FOREIGN KEY (`nome_tag`) REFERENCES (`tag`.`nome`)
 );
 
--- creazione della relazione ricorsiva sui tag
-CREATE TABLE `db_app_techweb`.`contiene` (
-    `tag_padre` INT NOT NULL, 
-    `tag_figlio` INT NOT NULL,
-    PRIMARY KEY (`tag_padre`,`tag_figlio`),
-    FOREIGN KEY (`tag_padre`) REFERENCES (`tag`.`nome`),
-    FOREIGN KEY (`tag_figlio`) REFERENCES (`tag`.`nome`),
-);
