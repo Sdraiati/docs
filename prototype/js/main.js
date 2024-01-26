@@ -16,9 +16,11 @@ const points = [
 
 let chart = new Chart('line-chart')
 chart.setAxis(0.1, 0.1)
+chart.setMax(1000)
+chart.setMin(-500)
 
 chart.drawAxis()
-chart.decorations(10, 4, 'grey', 1)
+chart.decorations('grey', 1)
 
 chart.lines(points)
 
@@ -30,7 +32,7 @@ chart.canvas.addEventListener('mousemove', (event) => {
 	// redraw everything all over to delete the previous hover
 	chart.clear();
 
-	chart.decorations(10, 4, 'grey', 1)
+	chart.decorations('grey', 1)
 
 	points.forEach((point) => {
 		chart.drawRect(point[0], point[1], 1 / points.length, 1 / 10, 'grey')

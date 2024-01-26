@@ -15,7 +15,7 @@ abbastanza all'utilizzo che potremmo fare delle canvas.
 
 | Name | Surname | GitHub Profile |
 | - | - | - |
+| Carlo | Rosso | [danesinoo](https://github.com/danesinoo) |
+| Eghosa | Igbinedion Osamwonyi | [eghosa02](https://github.com/eghosa02) |
 | Leonardo | Basso | [bassupreme](https://github.com/bassupreme) |
 | Simone | Caregnato | [simocare](https://github.com/simocare) |
-| Carlo | Rosso | [danesinoo](https://github.com/danesinoo) |
-| Eghosa | | |

@@ -1,33 +1,39 @@
 import { Chart } from './chart.js'
 
+Chart.prototype.setMax = function(max) {
+	this.max = max
+}
+
+Chart.prototype.setMin = function(min) {
+	this.min = min
+}
+
 /**
 	* # draw the decorations
-	* @param {number} max - maximum value of the y axis (spese)
-	* @param {number} min - minimum value of the y axis (spese)
 	* @param {string} color - color of the decorations
 	* @param {number} width - width of the decorations
 	* @param {array} yHeights - array of y heights
 	*/
-Chart.prototype.decorations = function(max, min, color = 'grey', width = 1, yHeights = [1, 2 / 3, 1 / 3]) {
+Chart.prototype.decorations = function(color = 'grey', width = 1, yHeights = [1, 2 / 3, 1 / 3]) {
 	yHeights.forEach((height) => {
 		let y = [[0, height], [1, height]]
 		this.lines(y, [], color, width)
-	})
+	});
 
-	if (min >= 0) {
+	if (this.min >= 0) {
 		yHeights.forEach((height) => {
-			this.text(Math.floor(max * height), 0, height, color)
+			this.text(Math.floor(this.max * height), 0, height, color)
 		})
 	} else {
 		yHeights.forEach((height) => {
-			this.text(Math.floor((max - min) * height + min), 0, height, color)
+			this.text(Math.floor((this.max - this.min) * height + this.min), 0, height, color)
 		})
 
-		const zero = -min / (max - min)
+		const zero = -this.min / (this.max - this.min)
 		this.lines([[0, zero], [1, zero]], [], color, width)
 		this.text(0, 0, zero, 'red')
 
-		this.text(min, 0, 0, color)
+		this.text(this.min, 0, 0, color)
 	}
 }
 
@@ -58,9 +64,14 @@ Chart.prototype.hover = function(points, mouseX) {
 		]
 
 	this.lines(dashedPoints, [5, 5], 'grey')
+	let y_text = Math.floor(point[1] * this.max)
+	if (this.min < 0) {
+		y_text = Math.floor((point[1] * (this.max - this.min) + this.min))
+	}
 
-	this.text(`${point[1]}`, 0, point[1])
-	this.text(`${point[0]}`, point[0], 0)
+
+	this.text(`${y_text}`, 0, point[1])
+	this.text(`${point[0]}`, point[0], 0 - this.axis.y)
 }
 
 /**
