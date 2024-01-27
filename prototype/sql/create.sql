@@ -1,7 +1,7 @@
 -- queries in sql per creare le tabelle
 
--- crezione tabella project
-CREATE TABLE project (
+-- crezione tabella progetto
+CREATE TABLE progetto (
     id INT NOT NULL AUTO_INCREMENT , 
     nome VARCHAR(255) NOT NULL , 
     descrizione TEXT NOT NULL , 
@@ -19,29 +19,29 @@ CREATE TABLE user (
 -- spesa non sembra essere un nome adatto in quanto implica un
 -- importo sempre negativo
 CREATE TABLE movimento (
-    id_project INT NOT NULL , 
+    id_progetto INT NOT NULL , 
     data DATETIME NOT NULL , 
     importo FLOAT NOT NULL , 
     descrizione TEXT, 
-    PRIMARY KEY (id_project, data),
-    FOREIGN KEY (id_project) REFERENCES (project.id),
+    PRIMARY KEY (id_progetto, data),
+    FOREIGN KEY (id_progetto) REFERENCES progetto(id),
 );
 
 -- creazione della relazione tag
 CREATE TABLE tag (
     nome VARCHAR(255) NOT NULL, 
-    id_project INT NOT NULL,
+    id_progetto INT NOT NULL,
     descrizione TEXT , 
-    PRIMARY KEY (nome, id_project),
-    FOREIGN KEY (id_project) REFERENCES (project.id)
+    PRIMARY KEY (nome, id_progetto),
+    FOREIGN KEY (id_progetto) REFERENCES progetto(id)
 );
 
--- un tag può essere appartenente a più progetti => relazione tra tag e project 
-CREATE TABLE tag_project (
-    id_project INT NOT NULL, 
-    nome_tag INT NOT NULL,
-    PRIMARY KEY (id_project,nome_tag),
-    FOREIGN KEY (id_project) REFERENCES (project.id),
-    FOREIGN KEY (nome_tag) REFERENCES (tag.nome)
+-- un tag può essere appartenente a più progetti => relazione tra tag e progetto 
+CREATE TABLE tag_progetto (
+    id_progetto INT NOT NULL, 
+    nome_tag VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id_progetto,nome_tag),
+    FOREIGN KEY (id_progetto) REFERENCES progetto(id),
+    FOREIGN KEY (nome_tag) REFERENCES tag(nome)
 );
 
