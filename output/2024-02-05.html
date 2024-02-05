@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang='it'>
+<head>
+	<meta charset='utf-8' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<title>2024-02-05</title>
+	<link rel='stylesheet' href='assets/main.css' />
+	<script type='module' src='assets/main.js'></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css' integrity='sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV' crossorigin='anonymous'>
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js' integrity='sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8' crossorigin='anonymous'></script>
+ <script defer src='https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js' integrity='sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05' crossorigin='anonymous'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMathInElement(document.body, {
+              // customised options
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false},
+                  {left: '\\(', right: '\\)', display: false},
+                  {left: '\\[', right: '\\]', display: true},
+                  {left: '\\begin{equation}', right: '\\end{equation}', display: true},
+                  {left: '\\begin{align}', right: '\\end{align}', display: true},
+                  {left: '\\begin{alignat}', right: '\\end{alignat}', display: true},
+                  {left: '\\begin{gather}', right: '\\end{gather}', display: true},
+                  {left: '\\begin{CD}', right: '\\end{CD}', display: true},
+                  {left: '\\[', right: '\\]', display: true}
+              ],
+              throwOnError : false
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div><h1>Stand-up (?)</h1>
+<ul>
+<li>brainstorming</li>
+<li>backlog</li>
+<li>issues</li>
+</ul>
+</div>
+<div><h1>Brainstorming</h1>
+<ul>
+<li>abbiamo provato a consegnare il progetto</li>
+<li>non ce l'abbiamo fatta</li>
+<li>abbiamo un PoC</li>
+</ul>
+<div><h2>Front-end</h2>
+<ul>
+<li>bisogna riscrivere il codice da capo</li>
+<li>ho capito di cosa abbiamo bisogno</li>
+</ul>
+</div>
+<div><h2>CSS</h2>
+<ul>
+<li>come siamo messi?</li>
+<li>c'è qualcosa da fare? che cosa?</li>
+</ul>
+</div>
+<div><h2>Back-end</h2>
+<ul>
+<li>il database va bene</li>
+<li>bisogna riscrivere il codice da capo</li>
+<li>bisogna creare una libreria interna</li>
+</ul>
+</div>
+</div>
+<div><h1>Backlog</h1>
+<ul>
+<li>ho progettato un po' di cose</li>
+<li>principalmente front-end e backend</li>
+</ul>
+<div><h2>Front-end</h2>
+<ul>
+<li>bisogna ristrutturare il codice</li>
+<li>bisogna adottare una gerarchia e dei pattern</li>
+<li>per rendere il codice più comprensibile e manutenibile</li>
+</ul>
+<div><h3>Canvas</h3>
+<p><img src='../assets/canvas.png' alt='canvas' /></p>
+<section class='comment'/>
+<h1>Canvas</h1>
+<p>Canvas è la classe che si occupa di interagire con l'elemento canvas di html.
+Non ho guardato eccessivamente il codice di Simone, può darsi che si riesca a
+creare una classe che sta in mezzo tra la mia e la sua. Forse mi sbaglio.
+Nel nostro sito abbiamo deciso di sviluppare due canvas: LineChart e CakeChart. </p>
+<h2>Observer</h2>
+<p>Ciascuna cavas deve essere aggiornata quando i dati di riferimento (le
+transazioni) nel client sono aggiornati.</p>
+<h2>UserInterface</h2>
+<p>Le canvas non sono le uniche classi che visualizzano i dati sul client.
+UserInterface è la classe che raggruppa gli elementi che visualizzano i dati nel
+client. UserInterface fornisce un'interfaccia comune per visualizzare i dati.
+Questa divisione è virtuale, nella pratica Observer e UserInterface sono
+collassate in una sola classe.</p>
+</section>
+</div>
+<div><h3>List</h3>
+<p><img src='../assets/list.png' alt='list' /></p>
+<section class='comment'/>
+<h1>List</h1>
+<p>Tutti i dati che non sono visualizzati mediante una canvas sono visualizzati
+tramite l'elemento list (in realtà anche i dati visualizzati tramite canvas,
+sono visualizzati tramite list). A questo gruppo apparterranno le classi:</p>
+<ul>
+<li>Transazioni</li>
+<li>Progetti</li>
+<li>Tag</li>
+<li>UserInfo</li>
+</ul>
+<h2>Observer</h2>
+<p>Ogni volta che i dati sul client sono cambiano, è necessario aggiornare anche la
+loro visualizzazione sulla pagina. L'observer sarà notificato dalla classe che
+si occupa di aggiornare i dati, ogni volta che risulta necessario.</p>
+<h2>UserInterface</h2>
+<p>La desrizione di prima è sufficiente.</p>
+</section>
+</div>
+<div><h3>Modify</h3>
+<p><img src='../assets/modify.png' alt='modify' /></p>
+<section class='comment'/>
+<h2>Modify</h2>
+<p>I dati inseriti dall'utente potrebbero essere sbagliati. Oppure l'utente
+potrebbe volerli modificare. Questa classe si occupa proprio dell'aggiornamento,
+della modifica o dell'eliminazione dei dati. A tutti gli effetti, questa è la
+classe che si occupa delle post request.</p>
+<h2>Observable</h2>
+<p>Ogni volta che viene eseguita una post request, è necessario notificare la
+classe che si occupa della gestione dei dati sul client. Infatti ogni volta che
+viene eseguita una post request, sappiamo che almeno qualche dato nel server
+differisce rispetto ai dati nel client. Questa classe segnala la discrepanza e
+ordina l'aggiornamento dei dati sul client.</p>
+</section>
+</div>
+<div><h3>Proxy</h3>
+<p><img src='../assets/proxy.png' alt='proxy' /></p>
+<section class='comment'/>
+<h1>Proxy</h1>
+<p>Proxy è una classe generica per la gestione dei dati. Si occupa di effettuare le
+get dei dati. Per questo motivo, c'è bisogno di una classe proxy per ogni dato
+dinamico all'interno della pagina. I dati dinamici saranno:</p>
+<ul>
+<li>Transazioni (le liste di transazioni e le canvas sono dinamiche);</li>
+<li>Progetti (la lista dei progetti è dinamica);</li>
+<li>Tag (le liste dei tag sono dinamiche);</li>
+<li>UserInfo (le informazioni dell'utente sono dinamici);</li>
+<li>Nome progetto.</li>
+</ul>
+<h2>Observable</h2>
+<p>Ciascuna classe proxy deve essere un observable, infatti ogni volta che viene
+eseguita una get request, i dati dinamici all'interno della pagina devono essere
+aggiornati. Le classi che si occupano di aggiornare i dati saranno gli observer.
+Mentre questa classe sarà un'observable per poter notificare l'aggiornamento dei
+dati.</p>
+<h2>Observer</h2>
+<p>Questo è meno intuitivo. Ciascuna classe proxy deve essere un observer, infatti
+ogni volta che viene eseguita una post request, i dati nel database sono
+cambiati. Allora i dati nel client devono essere aggiornati. Come sono
+aggiornati? Quando viene eseguita una post, la classe che esegue la post è un
+observable che notifica la classe proxy, che effettua una nuova get e aggiorna i
+dati sul client.</p>
+</section>
+</div>
+</div>
+</div>
+
+	<a class='clickable-area' id='top' />
+	<a class='clickable-area' id='right' />
+	<a class='clickable-area' id='left' />
+	<a class='clickable-area' id='bottom' />
+</body>
+</html>
