@@ -90,9 +90,8 @@ Il Model è composto da due classi principali:
 			\item \texttt{query()}: esegue una query al database;
 
 			\item \texttt{prepareAndBindParams()}: prepara una query al database
-				e la esegue, passando i parametri come array associativo. La
-				preparazione della query è necessaria per evitare \textit{SQL
-				injection};
+				e. La preparazione della query è necessaria per evitare 
+				\textit{SQL injection};
 	\end{itemize}
 
 	\item \textbf{DatabaseManager}: le estensioni di questa classe si occupano
@@ -126,19 +125,19 @@ Per stabilire la connessione con il database viene utilizzata l'estensione
 
 Il frontend è stato sviluppato utilizzando il pattern architetturale
 \textit{Model View Controller}. Questa scelta è stata fatta per separare la
-struttura, la presentazione e il comportamento dell'applicazione. In
-particolare, questo accorgimento permette di migliorare il mantenimento del
+struttura, la presentazione e il comportamento dell'applicazione, che permette 
+di migliorare il mantenimento del
 codice, la scalabilità e la riusabilità. Non solo, ma migliora anche il
 \textit{ranking} nei motori di ricerca, in quanto i motori di ricerca
 considerano il peso delle pagine web, e una struttura ben organizzata permette
-di ridurre il peso delle pagine web.\\
+di ridurne le dimensioni.\\
 In particolare, la scelta architetturale è evidenziata dalla gestione dei
 \textit{feedback} e dell'interazione con i canvas, perché il resto
 dell'applicazione è gestito dal backend.
 
 \subsubsection{\textit{Responsiveness}}
 
-Per ottenere un design \textit{responsive} sono state definiti definiti quattro 
+Per ottenere un design \textit{responsive} sono stati definiti quattro 
 \textit{breakpoint}:
 \begin{itemize}
 	\item \textbf{Mobile}: per schermi con larghezza inferiore a 483px;

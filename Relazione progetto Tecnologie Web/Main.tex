@@ -12,12 +12,12 @@
 % Publication quality tables
 \usepackage{xcolor}             
 % Driver-independent color extensions
-\usepackage{geometry}           
+\usepackage[top=3cm, bottom=2.5cm, left=2.5cm, right=2.5cm,
+	headsep=0.5cm, headheight=2cm, footskip=1.5cm]{geometry}
 % Customize document dimensions
-\usepackage{fullpage}           
-% all 4 margins to be either 1 inch or 1.5 cm
 \usepackage{comment}            
 % Commenting
+\usepackage{adjustbox} 
 \usepackage{listings}           
 % Typeset programs (programming code) within LaTeX
 \usepackage{lastpage}           
@@ -54,12 +54,14 @@
 
 \input {defs.tex}
 \begin{document}
+\pagestyle{empty}
 \input{titlepage}
 \newpage
 \input{abstract}
 \newpage
 \tableofcontents
 \newpage
+\pagestyle{plain}
 \pagenumbering{arabic} 
 \input{adr.tex}
 \input{progettazione.tex}

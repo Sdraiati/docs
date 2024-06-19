@@ -12,7 +12,6 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Orientamento dell'utente}{6}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Colori}{6}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}Responsive layout}{6}{subsubsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Canvas}{6}{subsubsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.4}Struttura del sito}{7}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Realizzazione}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Backend}{8}{subsection.3.1}%
