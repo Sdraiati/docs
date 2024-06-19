@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.5)  19 JUN 2024 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.5)  19 JUN 2024 23:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1359,17 +1359,17 @@ l.62
       [2]) (./progettazione.tex
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 7.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 1.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
  [3]
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 53.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 46.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
  [4]
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 101.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 83.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
  [5]
 <figures/sitemap.png, id=222, 1540.39125pt x 610.73625pt>
@@ -1379,15 +1379,15 @@ Package pdftex.def Info: figures/sitemap.png  used on input line 114.
 (pdftex.def)             Requested size: 364.19667pt x 144.38971pt.
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 132.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 123.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [6 <./figures/sitemap.png>])
-(./realizzazione.tex
+ [6 <./figures/sitemap.png>]
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 7.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 152.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [7]
+
+[7]) (./realizzazione.tex
 <figures/RouterClassDiagram.png, id=236, 412.54124pt x 98.3675pt>
 File: figures/RouterClassDiagram.png Graphic file (type png)
 <use figures/RouterClassDiagram.png>
@@ -1396,50 +1396,55 @@ Package pdftex.def Info: figures/RouterClassDiagram.png  used on input line 46.
 (pdftex.def)             Requested size: 227.62206pt x 54.27489pt.
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 52.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 48.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [8 <./figures/RouterClassDiagram.png>]
-<figures/ApiClassDiagram.png, id=252, 1205.50375pt x 505.89pt>
+ [8]
+<figures/ApiClassDiagram.png, id=250, 1205.50375pt x 505.89pt>
 File: figures/ApiClassDiagram.png Graphic file (type png)
 <use figures/ApiClassDiagram.png>
 Package pdftex.def Info: figures/ApiClassDiagram.png  used on input line 67.
 (pdftex.def)             Requested size: 409.71692pt x 171.93085pt.
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 92.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 70.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [9 <./figures/ApiClassDiagram.png>]
-<figures/ModelClassDiagram.png, id=261, 1195.46625pt x 395.4775pt>
+ [9 <./figures/RouterClassDiagram.png>]
+<figures/ModelClassDiagram.png, id=258, 1195.46625pt x 395.4775pt>
 File: figures/ModelClassDiagram.png Graphic file (type png)
 <use figures/ModelClassDiagram.png>
 Package pdftex.def Info: figures/ModelClassDiagram.png  used on input line 106.
 
 (pdftex.def)             Requested size: 409.71692pt x 135.54074pt.
-<figures/Database.png, id=262, 1320.935pt x 472.76625pt>
+File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
+<use figures/PennyWiseLogo.jpeg>
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 109.
+(pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
+ [10 <./figures/ApiClassDiagram.png>]
+<figures/Database.png, id=268, 1320.935pt x 472.76625pt>
 File: figures/Database.png Graphic file (type png)
 <use figures/Database.png>
 Package pdftex.def Info: figures/Database.png  used on input line 114.
 (pdftex.def)             Requested size: 409.71692pt x 146.63538pt.
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 133.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 138.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [10 <./figures/ModelClassDiagram.png> <./figures/Database.png>]
+ [11 <./figures/ModelClassDiagram.png> <./figures/Database.png>]
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 173.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 187.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [11]) (./organizzazione_del_lavoro.tex
+ [12]) (./organizzazione_del_lavoro.tex
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
-Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 17.
+Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 26.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [12])
+ [13])
 File: figures/PennyWiseLogo.jpeg Graphic file (type jpg)
 <use figures/PennyWiseLogo.jpeg>
 Package pdftex.def Info: figures/PennyWiseLogo.jpeg  used on input line 71.
 (pdftex.def)             Requested size: 25.09521pt x 25.09521pt.
- [13]
+ [14]
 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Main.aux)
@@ -1451,8 +1456,8 @@ Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 173D97F7153B657E76989273A96329CD;3299.
  ) 
 Here is how much of TeX's memory you used:
- 55322 strings out of 474116
- 1369166 string characters out of 5743683
+ 55323 strings out of 474116
+ 1369173 string characters out of 5743683
  2138379 words of memory out of 5000000
  76876 multiletter control sequences out of 15000+600000
  576778 words of font info for 82 fonts, out of 8000000 for 9000
@@ -1475,10 +1480,10 @@ e/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2024/tex
 mf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on Main.pdf (16 pages, 905418 bytes).
+Output written on Main.pdf (17 pages, 907482 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
  259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
