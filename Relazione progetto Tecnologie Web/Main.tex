@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts}
+
+\usepackage{graphicx}           
+% Enhanced support for images
+\usepackage{float}              
+% Improved interface for floating objects
+\usepackage{booktabs}           
+% Publication quality tables
+\usepackage{xcolor}             
+% Driver-independent color extensions
+\usepackage[top=3cm, bottom=2.5cm, left=2.5cm, right=2.5cm,
+	headsep=0.5cm, headheight=2cm, footskip=1.5cm]{geometry}
+% Customize document dimensions
+\usepackage{comment}            
+% Commenting
+\usepackage{adjustbox} 
+\usepackage{listings}           
+% Typeset programs (programming code) within LaTeX
+\usepackage{lastpage}           
+% Reference last page for Page N of M type footers.
+\usepackage{fancyhdr}           
+% Control of page headers and footers
+\usepackage{hyperref}           
+% Cross-referencing 
+\usepackage[small,bf]{caption}  
+% Captions
+\usepackage{multicol}
+\usepackage{tikz}               
+% Creating graphic elements
+\usepackage{circuitikz}         
+% Creating circuits
+\usepackage{verbatim}          
+% Print exactly what you type in
+\usepackage{cite}               
+% Citation
+\usepackage[us]{datetime} 
+% Various time format
+\usepackage{blindtext}
+% Generate blind text
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[italian]{babel}
+\usepackage{pgfplots}
+
+\raggedright
+\linespread{1.5}
+
+\input {defs.tex}
+\begin{document}
+\pagestyle{empty}
+\input{titlepage}
+\newpage
+\input{abstract}
+\newpage
+\tableofcontents
+\newpage
+\pagestyle{plain}
+\pagenumbering{arabic} 
+\input{adr.tex}
+\input{progettazione.tex}
+\input{realizzazione.tex}
+\input{organizzazione_del_lavoro.tex}
+
+\end{document}
