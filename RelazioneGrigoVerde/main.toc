@@ -1,0 +1,27 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Analisi dei requisiti}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Target}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Attori}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Funzionalità}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}SEO}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Progettazione}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Design Persona}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Palette}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Accessibilità}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Orientamento dell'utente}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Colori}{7}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Responsive layout}{7}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}Struttura del sito}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Realizzazione}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Back-end}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Database}{8}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Front-end}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Test}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Test di unità}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Test di accessibilità}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Organizzazione del lavoro}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Basso Leonardo}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Caregnato Simone}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Igbinedion Osamwonyi Eghosa}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Rosso Carlo}{9}{subsection.5.4}%
