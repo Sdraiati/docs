@@ -38,7 +38,7 @@
 
 # Pagine
 
-[ About us ] - martedì 23
+1. About us - martedì 23
 
 1. Homepage - Simone - lunedì 22
 
