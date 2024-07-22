@@ -20,9 +20,11 @@
 - modifica
 - eliminazione
 
-- creazione immagine
-- modifica immagine
-- eliminazione immagine
+### Immagine
+
+- creazione
+- modifica
+- eliminazione
 
 #### Disponibilità
 
