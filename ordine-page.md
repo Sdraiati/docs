@@ -40,8 +40,8 @@
 
 # Pagine
 
--[x] About us - martedì 23
--[x] Homepage - Simone - lunedì 22
+- [x] About us - martedì 23
+- [x] Homepage - Simone - lunedì 22
 
 2. Autenticazione
     - utente
