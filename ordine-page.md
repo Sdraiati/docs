@@ -31,12 +31,14 @@
 - creazione
 - modifica
 - eliminazione
+- prendi
 
 ##### Prenotazione
 
 - creazione
 - modifica
 - eliminazione
+- prendi
 
 # Pagine
 
