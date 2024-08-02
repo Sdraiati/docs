@@ -44,28 +44,23 @@
 
 - [x] About us - martedì 23
 - [x] Homepage - Simone - lunedì 22
-
-2. Autenticazione
-    - utente
-
-3. Visualizzazione degli spazi
+- [x] Autenticazione - Simone
+- [ ] Visualizzazione degli spazi
     - spazio
+- [ ] Creazione di uno spazio
 
-4. Creazione di uno spazio
-
---- 
-
-3. Dettaglio spazio
+---
+      
+- [ ] Dettaglio spazio
     - prenotazioni
-
-4. Modifica spazio
-
+- [ ] Modifica spazio
+- [ ] Nuova prenotazione
+- [ ] Dettaglio prenotazione
+---
 2. Dashboard docente
-    - prenotazioni
+   - prima di implementarla bisogna che dettaglio spazio sia implementata, così che non serva ridefinire `Prenotazioni`, la classe che renderizza le prenotazioni
 
-3. Nuova prenotazione
-
-3. Dettaglio prenotazione
+4. Dettaglio prenotazione
 
 2. Dashboard amministratore
     - prenotazioni
