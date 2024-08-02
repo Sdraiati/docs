@@ -2,90 +2,91 @@
 
 \subsection{Design Persona}
 
-Partendo dalla risorsa consigliata nel corso (\textit{Desining for Emotion} di Aaron Walter), abbiamo descritto la personalità di partenza per sviluppare il prodotto:
+Partendo dalla risorsa consigliata nel corso (\textit{Desining for Emotion} di
+Aaron Walter), abbiamo descritto la personalità di partenza per sviluppare il
+prodotto:
+
 \begin{itemize}
-    \item \textbf{Brand name}: a questo punto il nome del brand è noto, ovvero
-    \textit{Grigo Verde};
+	\item \textbf{Brand name}: a questo punto il nome del brand è noto, ovvero
+	      \textit{Grigo Verde};
 
-    \item \textbf{Overview}: 
+	\item \textbf{Overview}: il sito prosegue il lavoro degli studenti del Liceo
+	      Grigoletti che hanno partecipato ad un progetto di riqualificazione
+	      delle aree verdi della scuola. Per questo motivo il verde è il colore
+	      predominante del sito;
 
-    \item \textbf{Brand traits}:
-        \begin{itemize}
-            \item Formale ma non rigido: deve essere adatto ad un contesto scolastico.
-            \item Simpatico ma non scherzoso: questo sito deve essere acceduto da dei docenti, non da bambini di quarta elementare.
-            \item Schematico ma non rigido: è vero, è un sistema di prenotazioni, ma è al quanto flessibile.
-            \item Preciso: sempre pronto a rispondere ad ogni esigenza dell'utente con la massima accuratezza.
-        \end{itemize}
-    
-    \item \textbf{Personality map}:
-        \begin{center}
-            \begin{tikzpicture}
-                \begin{axis}[
-                    axis lines = middle,
-                    xlabel = { amichevole },
-                    ylabel = { formale },
-                    xmin = -10, xmax = 10,
-                    ymin = -10, ymax = 10,
-                    xtick = {-10,-5,...,10},
-                    ytick = {-10,-5,...,10},
-                ]
-            % template per mostrare il punto all'interno del piano cartesiano.
-					\addplot [
-						color=black,
-						mark=*,
-						only marks,
-					] coordinates {
-					(3, 5)
-				} node[below] {$P$};
-                \end{axis}
-                
-            \end{tikzpicture}
-        \end{center}
+	\item \textbf{Brand traits}:
+	      \begin{itemize}
+		      \item Formale ma non rigido: deve essere adatto ad un contesto
+		            scolastico;
+		      \item Simpatico ma non scherzoso: questo sito deve essere
+		            consultato da dei docenti;
+		      \item Schematico ma non povero;
+		      \item Preciso: deve essere sempre pronto a rispondere ad ogni
+		            esigenza dell'utente con la massima accuratezza.
+	      \end{itemize}
 
-    
-    \item \textbf{Voice}: 
-		\begin{itemize}
-            \item ...
-		\end{itemize}
-    
-    \item \textbf{Copy examples}: ...
-    
-    \item \textbf{Visual lexicon}:
-		\begin{itemize}
-			\item \textbf{Colori}: verde scuro per i titoli, nero per i testi e bianco per lo sfondo;  
-			\item \textbf{Contorni}: poco arrotondati: la prenotazione delle aule è una procedura precisa. Inserire dei contorni non 
-            arrotondati rafforza l'idea di schematico; 
-			\item \textbf{Ombre}:assenti;
-			\item \textbf{Font}: \textit{Sans-Serif Arial};
-            \item ...
-		\end{itemize}
-    
-    \item \textbf{Engagement methods}:
-		\begin{itemize}
-			\item \textbf{Feedback}: ad ogni azione corriponde una notifica, in
-				modo tale che l'utente abbia sempre un riscontro;
+	\item \textbf{Personality map}:
+	      \begin{center}
+		      \begin{tikzpicture}
+			      \begin{axis}[
+					      axis lines = middle,
+					      xlabel = { amichevole },
+					      ylabel = { formale },
+					      xmin = -10, xmax = 10,
+					      ymin = -10, ymax = 10,
+					      xtick = {-10,-5,...,10},
+					      ytick = {-10,-5,...,10},
+				      ]
+				      % template per mostrare il punto all'interno del piano cartesiano.
+				      \addplot [
+					      color=black,
+					      mark=*,
+					      only marks,
+				      ] coordinates {
+						      (3, 5)
+					      } node[below] {$P$};
+			      \end{axis}
 
-			\item \textbf{Design pulito e intuitivo}: l'utente deve essere in
-				grado di capire cosa fare senza dover leggere alcun manuale;
+		      \end{tikzpicture}
+	      \end{center}
 
-			\item \textbf{Psicologia dei colori}: sono utilizzati dei colori
-				accattivanti che richiamano il personaggio scelto;
+	\item \textbf{Visual lexicon}:
+	      \begin{itemize}
+		      \item \textbf{Colori}: verde scuro per i titoli, nero per i testi
+		            e bianco per lo sfondo;
+		      \item \textbf{Contorni}: arrotondati: la prenotazione delle
+		            aule è una procedura precisa. Inserire dei contorni
+		            arrotondati rende il prodotto più accattivante;
+		      \item \textbf{Ombre}:assenti;
 
-		\end{itemize}
+		      \item \textbf{Font}: \textit{Sans-Serif Arial};
+	      \end{itemize}
+
+	\item \textbf{Engagement methods}:
+	      \begin{itemize}
+		      \item \textbf{Design pulito e intuitivo}: l'utente deve essere in
+		            grado di capire cosa fare senza dover leggere alcun manuale;
+
+		      \item \textbf{Psicologia dei colori}: sono utilizzati dei colori
+		            accattivanti che richiamano il verde della natura.
+	      \end{itemize}
 \end{itemize}
 
 \subsection{Palette}
 
-La palette è ancora in fase di revisione in quanto potrebbero essere ridefiniti alcuni colori durante il progetto.
+La palette di colori è stata scelta in base alla personalità del brand e per
+assicurare una buona leggibilità e usabilità del sito, infatti rispettano lo
+standard WCAG AA.
 
 \begin{itemize}
-    \item BG: #FFFFFF
-    \item BG - footer: #F7F7F8
-    \item FG - Text: #335833
-    \item Button: #335833
-    \item Text Button: #FFFFFF
-    \item Link: #B6C9BB
-    \item Link visitato: (viola di default)
+	\item BG: \#FFFFFF
+	\item BG - footer: \#F7F7F8
+	\item Testo: \#333333
+	\item Button: \#335833
+	\item Text Button: \#FFFFFF
+	\item Link: \#B6C9BB
+	\item Link visitato: (viola di default)
 \end{itemize}
 
 \subsection{Accessibilità}
@@ -120,5 +121,5 @@ contenuti sono suddivisi secondo uno schema organizzativo per argomento di
 seguito sono descritte le singole pagine:
 
 \begin{itemize}
-    \item ...
+	\item ...
 \end{itemize}
