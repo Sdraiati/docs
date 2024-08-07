@@ -1,11 +1,33 @@
 \section{Test}
+\label{sec:test}
 
-\subsection{Test di unità}
+Per controllare la qualità di Grigo Verde sono eseguiti diversi test:
+\begin{itemize}
+	\item Test di unità: per controllare la business logic abbiamo creato una
+	      pagina html che invoca delle funzioni di test in php durante la
+	      creazione della pagina;
 
-Viene creata la pagina html di test per tutti i componenti di Grigo Verde, in
-modo da verificare il corretto funzionamento di ogni singolo componente.
+	\item Test mediante l'estensione browser Wave: per controllare
+	      l'accessibilità in modo automatico;
+
+	\item Test mediante Total Validator: per controllare l'accessibilità in modo
+	      automatico;
+
+	\item Test mediante il validatore W3C: per controllare la validità del codice
+	      HTML e CSS;
+
+	\item Test manuali: per controllare l'accessibilità in modo manuale;
+
+	\item Test di usabilità: per controllare l'usabilità del sito, anche su
+	      dispositivi di diverse dimensioni;
+
+	\item Test di compatibilità: per controllare la compatibilità con i browser
+	      più diffusi.
+\end{itemize}
 
 \subsection{Test di accessibilità}
 
-Viene usata l'estensione browser Wave per verificare che il sito sia accessibile
-a tutti gli utenti.
+Non abbiamo riscontrato errori con i validatori che abbiamo usato, ma ci sono
+alcuni warning che non abbiamo risolto, come per esempio i link ridondanti.
+Infatti, per migliorare l'accessibilità, abbiamo deciso di lasciare due link
+alla homepage: uno nel logo e uno nella breadcrumb.

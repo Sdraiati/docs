@@ -6,11 +6,11 @@
 delle aree verdi della scuola Michelangelo Grigoletti di Pordenone. Il target
 principale è costituito dagli insegnanti della scuola, che necessitano di
 strumenti semplici per organizzare le lezioni all'aperto.\\
-Il servizio è stato progettato per essere intuitivo e facile da usare, in modo
+Il servizio è progettato per essere intuitivo e facile da usare, in modo
 da permettere agli utenti di prenotare le aree verdi in pochi passaggi. Inoltre,
-il servizio è stato progettato per essere accessibile da dispositivi mobili, in
+il servizio vuole essere accessibile da dispositivi mobili, in
 modo da permettere agli utenti di prenotare le aree verdi anche in mobilità.
-Considerando il target principale, il servizio è stato progettato per essere
+Considerando il target principale, il servizio è progettato per essere
 facilmente accessibile e utilizzabile da utenti non esperti di tecnologia.
 
 \subsection{Attori}
@@ -18,179 +18,174 @@ facilmente accessibile e utilizzabile da utenti non esperti di tecnologia.
 Gli attori principali dell'applicazione sono i seguenti:
 
 \begin{itemize}
-    \item \textbf{Visitatore}: un utente generico, che non è riconosciuto dal 
-        sistema;
+	\item \textbf{Visitatore}: un utente generico, che non è riconosciuto dal
+	      sistema;
 
-    \item \textbf{Utente Docente}: un docente autorizzato, registrato nel
-        sistema e che ha effettuato il login;
+	\item \textbf{Utente Docente}: un docente autorizzato, registrato nel
+	      sistema e che ha effettuato il login;
 
-    \item \textbf{Utente Amministratore}: un amministratore autorizzato,
-        registrato nel sistema e che ha effettuato il login.
+	\item \textbf{Utente Amministratore}: un amministratore autorizzato,
+	      registrato nel sistema e che ha effettuato il login.
 \end{itemize}
 
 \subsection{Funzionalità}
 
 \textit{Grigo Verde} offre le seguenti funzionalità:
 \begin{enumerate}
-    \item \textbf{Autenticazione}: login tramite username e password e quindi
-    riconoscimento dell'utente da parte del sistema; Disponibile a: 
-        \begin{itemize}
-            \item Visitatore;
-        \end{itemize}
+	\item \textbf{Autenticazione}: login tramite username e password e quindi
+	      riconoscimento dell'utente da parte del sistema; Disponibile a:
+	      \begin{itemize}
+		      \item Visitatore;
+	      \end{itemize}
 
-    \item \textbf{Logout}: Disponibile a: 
-        \begin{itemize}
-            \item Utente docente;
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Logout}: Disponibile a:
+	      \begin{itemize}
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Visualizzazione pagina informativa sull'applicazione}, in cui
-    viene spiegato lo scopo, le motivazioni delle sua creazione e cosa offre;
-    Disponibile a:
-        \begin{itemize}
-            \item Visitatore;
-            \item Utente docente;
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Visualizzazione pagina informativa sull'applicazione}, in cui
+	      viene spiegato lo scopo, le motivazioni delle sua creazione e cosa
+	      offre;
+	      Disponibile a:
+	      \begin{itemize}
+		      \item Visitatore;
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Visualizzazione degli spazi registrati nel sistema}, con foto
-    descrizione, numero di posti; Disponibile a:
-        \begin{itemize}
-            \item Visitatore;
-            \item Utente docente;
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Visualizzazione degli spazi registrati nel sistema}, con foto
+	      descrizione, numero di posti; Disponibile a:
+	      \begin{itemize}
+		      \item Visitatore;
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Filtraggio degli spazi per tipo}, ad esempio per aule o per
-    sale ping pong; Disponibile a:
-        \begin{itemize}
-            \item Visitatore;
-            \item Utente docente;
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Filtraggio degli spazi per tipo}, ad esempio per aule o per
+	      aree ricreative; Disponibile a:
+	      \begin{itemize}
+		      \item Visitatore;
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Filtraggio degli spazi per disponibilità}, tramite selezione
-    del giorno e dell'intervallo temporale; Disponibile a:
-        \begin{itemize}
-            \item Visitatore;
-            \item Utente docente;
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Filtraggio degli spazi per disponibilità}, tramite selezione
+	      del giorno e dell'intervallo temporale; Disponibile a:
+	      \begin{itemize}
+		      \item Visitatore;
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Visualizzazione delle disponibilità orarie di uno spazio}
-    sulla base del mese selezionato; Disponibile a:
-    \begin{itemize}
-            \item Visitatore; 
-            \item Utente docente;
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Visualizzazione delle disponibilità orarie di uno spazio}
+	      sulla base del mese selezionato; Disponibile a:
+	      \begin{itemize}
+		      \item Visitatore;
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Visualizzazione introduzione alle persone che hanno sviluppato
-    il progetto}; Disponibile a:
-        \begin{itemize}
-            \item Visitatore;
-            \item Utente docente;
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Prenotazione di uno spazio disponibile}, specificando il
+	      giorno da calendario e l'orario; Disponibile a:
+	      \begin{itemize}
+		      \item Utente docente;
+	      \end{itemize}
 
-    \item \textbf{Prenotazione di uno spazio disponibile}, specificando il
-    giorno da calendario e l'orario; Disponibile a:
-        \begin{itemize}
-            \item Utente docente;
-        \end{itemize}
+	\item \textbf{Annullamento prenotazione da lui creata in precedenza};
+	      Disponibile a:
+	      \begin{itemize}
+		      \item Utente docente;
+	      \end{itemize}
 
-    \item \textbf{Annullamento prenotazione da lui creata in precedenza};
-    Disponibile a:
-        \begin{itemize}
-            \item Utente docente;
-        \end{itemize}
+	\item \textbf{Modifica di qualunque prenotazione}: Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Modifica di qualunque prenotazione}: Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Inserimento di prenotazioni periodiche}: inserimento di
+	      prenotazioni che si ripetono in un intervallo di tempo; Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Inserimento di prenotazioni periodiche}: inserimento di
-    prenotazioni che si ripetono in un intervallo di tempo; Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Creazione di un nuovo spazio}, con inserimento di immagini,
+	      posizione, nome, tipo, descrizione, numero di tavoli; Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Creazione di un nuovo spazio}, con inserimento di immagini,
-    posizione, nome, tipo, descrizione, numero di tavoli; Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Modifica di uno spazio}: inserimento/eliminazione di immagini,
+	      modifica posizione, nome, tipo, descrizione, numero di tavoli; Disponibile
+	      a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Modifica di uno spazio}: inserimento/eliminazione di immagini,
-    modifica posizione, nome, tipo, descrizione, numero di tavoli; Disponibile
-    a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Eliminazione di uno spazio}: Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Eliminazione di uno spazio}: Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Inserimento disponibilità spazio}: inserimento in un
+	      calendario settimanale della disponibilità oraria; Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Inserimento disponibilità spazio}: inserimento in un
-    calendario settimanale della disponibilità oraria; Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Creazione di un nuovo tipo di spazio}, con specifica del nome
+	      e della possibilità o meno di specificare il numero di posti; Disponibile
+	      a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Creazione di un nuovo tipo di spazio}, con specifica del nome
-    e della possibilità o meno di specificare il numero di posti; Disponibile
-    a:
-    \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Visualizzazione della lista degli utenti registrati nel
+		      sistema}; Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Visualizzazione della lista degli utenti registrati nel
-    sistema}; Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Registrazione nuovo utente}: aggiunta del nuovo utente al
+	      sistema con inserimento di nome, cognome, ruolo (docente o amministratore);
+	      Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Registrazione nuovo utente}: aggiunta del nuovo utente al
-    sistema con inserimento di nome, cognome, ruolo (docente o amministratore);
-    Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Eliminazione utente}: Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 
-    \item \textbf{Eliminazione utente}: Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
-
-    \item \textbf{Modifica utente}: modifica di nome, cognome e/o ruolo;
-    Disponibile a:
-        \begin{itemize}
-            \item Utente amministratore;
-        \end{itemize}
+	\item \textbf{Modifica utente}: modifica di nome, cognome e/o ruolo;
+	      Disponibile a:
+	      \begin{itemize}
+		      \item Utente amministratore;
+	      \end{itemize}
 \end{enumerate}
 
 \subsection{SEO}
 
-Innanzitutto, abbiamo immaginao il \textit{search intent} dei nostri utenti. 
-Abbiamo identificato le seguenti \textit{query} che potrebbero essere 
+Innanzitutto, abbiamo immaginao il \textit{search intent} dei nostri utenti.
+Abbiamo identificato le seguenti \textit{query} che potrebbero essere
 utilizzate per cercare il nostro sito:
 \begin{itemize}
-	\item \textit{Grigo Verde};
-	\item \textit{Liceo Grigoletti};
-	\item \textit{Liceo Scientifico Pordenone};
-	\item \textit{Spazi verdi};
-	\item \textit{Aule all'aperto};
+	\item \textbf{Grigo Verde};
+	\item \textbf{Liceo Grigoletti};
+	\item \textbf{Liceo Scientifico Pordenone};
+	\item \textbf{Spazi verdi};
+	\item \textbf{Aule all'aperto};
 \end{itemize}
 
 A partire da queste \textit{query}, abbiamo scritto i tag \texttt{<title>},
 \texttt{<meta name="description">} e \texttt{<meta name="keywords">} delle
 pagine del nostro sito. Si noti, che queste informazioni non sono aggiunte alle
 pagine che richiedono l'autenticazione, in quanto non sono indicizzate dai
-motori di ricerca e non sono accessibili ai visitatori non autenticati.\\
-Inoltre, sono state adottate soluzioni tecniche, come la
+motori di ricerca e non sono accessibili ai visitatori non autenticati. In
+aggiunta, sono state aggiunte keyword specifiche per ogni pagina, in modo da
+migliorare il posizionamento nei motori di ricerca.\\
+Finalmente, sono state adottate soluzioni tecniche, come la
 divisione tra la struttura, la presentazione ed il comportamento per ridurre il
 peso delle pagine e migliorare il \textit{ranking} nei motori di ricerca. Le
 soluzioni tecniche adottate sono spiegate nel dettaglio nelle sezioni dedicate.
