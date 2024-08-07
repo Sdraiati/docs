@@ -42,8 +42,8 @@
 
 # Pagine
 
-- [x] About us - martedì 23
-- [x] Homepage - Simone - lunedì 22
+- [x] About us
+- [x] Homepage
 - [x] Autenticazione - Simone
 - [x] Creazione di uno spazio
 
@@ -52,16 +52,29 @@
     - spazio
 - [ ] Dettaglio spazio
     - prenotazioni
-- [ ] Modifica spazio
-- [ ] Nuova prenotazione
-- [ ] Dettaglio prenotazione
-- [ ] Registrazione utente
+- [x] Modifica spazio
+- [x] Nuova prenotazione
+- [x] Dettaglio prenotazione
+- [x] Registrazione utente
+- [x] Dettaglio prenotazione
+- [x] Modifica prenotazione
+---
+
+- [ ] Dashboard docente
+- [ ] Dashboard amministratore
+
+- [ ] Lista dei docenti
+
+- [ ] Dettaglio Docente (Simone)
+- [ ] Modifica Docente (Simone)
+
+- [ ] Pagina 404
+- [ ] Pagina 403
 
 ---
+
 2. Dashboard docente
    - prima di implementarla bisogna che dettaglio spazio sia implementata, così che non serva ridefinire `Prenotazioni`, la classe che renderizza le prenotazioni
-
-4. Dettaglio prenotazione
 
 2. Dashboard amministratore
     - prenotazioni
@@ -73,6 +86,5 @@
 
 5. Modifica docente
 
-3. Lista di tutte le prenotazioni
-
 1. Pagina 404 -> pagina non trovata
+2. Pagina 403 -> pagina non autorizzato
