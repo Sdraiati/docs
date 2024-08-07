@@ -52,12 +52,13 @@
     - spazio
 - [ ] Dettaglio spazio
     - prenotazioni
-- [x] Modifica spazio
-- [x] Nuova prenotazione
-- [x] Dettaglio prenotazione
-- [x] Registrazione utente
-- [x] Dettaglio prenotazione
-- [x] Modifica prenotazione
+- [ ] Modifica spazio
+- [ ] Nuova prenotazione
+- [ ] Dettaglio prenotazione
+- [ ] Registrazione utente
+- [ ] Dettaglio prenotazione
+- [ ] Modifica prenotazione
+
 ---
 
 - [ ] Dashboard docente
@@ -65,8 +66,8 @@
 
 - [ ] Lista dei docenti
 
-- [ ] Dettaglio Docente (Simone)
-- [ ] Modifica Docente (Simone)
+- [ ] Dettaglio Docente (deve essere svolta dopo Dashboard Docente)
+- [ ] Modifica Docente
 
 - [ ] Pagina 404
 - [ ] Pagina 403
