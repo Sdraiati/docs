@@ -5,7 +5,9 @@ Per controllare la qualità di Grigo Verde sono eseguiti diversi test:
 \begin{itemize}
 	\item Test di unità: per controllare la business logic abbiamo creato una
 	      pagina html che invoca delle funzioni di test in php durante la
-	      creazione della pagina;
+	      creazione della pagina. Per accedere alla pagina dei test, bisogna
+	      rimuovere il commento alla riga 42 del file
+	      \texttt{GrigoVerde/src/controller/routes.php};
 
 	\item Test mediante l'estensione browser Wave: per controllare
 	      l'accessibilità in modo automatico;
@@ -22,12 +24,12 @@ Per controllare la qualità di Grigo Verde sono eseguiti diversi test:
 	      dispositivi di diverse dimensioni;
 
 	\item Test di compatibilità: per controllare la compatibilità con i browser
-	      più diffusi.
+	      più diffusi;
+
+	\item Test sul contrasto dei colori: per controllare che il contrasto dei
+	      colori sia sufficiente per garantire l'accessibilità a persone con
+	      disabilità visive con Adobe Color.
 \end{itemize}
 
-\subsection{Test di accessibilità}
-
-Non abbiamo riscontrato errori con i validatori che abbiamo usato, ma ci sono
-alcuni warning che non abbiamo risolto, come per esempio i link ridondanti.
-Infatti, per migliorare l'accessibilità, abbiamo deciso di lasciare due link
-alla homepage: uno nel logo e uno nella breadcrumb.
+Non abbiamo rilevato errori con i test automatici, mentre con i test manuali
+abbiamo riscontrato che il sito è accessibile e usabile.

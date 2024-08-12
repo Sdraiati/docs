@@ -230,7 +230,11 @@ Il sito è stato progettato per adattarsi a qualsiasi dispositivo, in modo da
 garantire un'esperienza di utilizzo ottimale sia da desktop che da mobile. Per
 questo motivo, sono stati adottati layout flessibili e fluidi, in modo da
 garantire una buona leggibilità e usabilità indipendentemente dalla dimensione
-dello schermo o dalle preferenze dell'utente. I breakpoint sono stati scelti
+dello schermo o dalle preferenze dell'utente: infatti abbiamo utilizzato solo
+unità di misura proporzionali come \texttt{em} oppure \texttt{\%}, tranne che
+per la dimensione minima delle schede che mostrano uno spazio, che è stata
+impostata a 150px, per garantire una buona visualizzazione delle immagini.\\
+I breakpoint sono stati scelti
 con cura per garantire una transizione fluida tra i diversi layout e una
 buona esperienza di utilizzo su tutti i dispositivi. Sono rispettivamente:
 \begin{itemize}
@@ -357,3 +361,28 @@ Di seguito sono descritte le pagine del sito:
 		            registrare un nuovo utente all'interno del sistema.
 	      \end{itemize}
 \end{itemize}
+
+\subsection{SEO}
+
+Innanzitutto, abbiamo immaginao il \textit{search intent} dei nostri utenti.
+Abbiamo identificato le seguenti \textit{query} che potrebbero essere
+utilizzate per cercare il nostro sito:
+\begin{itemize}
+	\item \textbf{Grigo Verde};
+	\item \textbf{Liceo Grigoletti};
+	\item \textbf{Liceo Scientifico Pordenone};
+	\item \textbf{Spazi verdi};
+	\item \textbf{Aule all'aperto};
+\end{itemize}
+
+A partire da queste \textit{query}, abbiamo scritto i tag \texttt{<title>},
+\texttt{<meta name="description">} e \texttt{<meta name="keywords">} delle
+pagine del nostro sito. Si noti, che queste informazioni non sono aggiunte alle
+pagine che richiedono l'autenticazione, in quanto non sono indicizzate dai
+motori di ricerca e non sono accessibili ai visitatori non autenticati. In
+aggiunta, sono state aggiunte keyword specifiche per ogni pagina, in modo da
+migliorare il posizionamento nei motori di ricerca.\\
+Finalmente, sono state adottate soluzioni tecniche, come la
+divisione tra la struttura, la presentazione ed il comportamento per ridurre il
+peso delle pagine e migliorare il \textit{ranking} nei motori di ricerca. Le
+soluzioni tecniche adottate sono spiegate nel dettaglio nelle sezioni dedicate.
