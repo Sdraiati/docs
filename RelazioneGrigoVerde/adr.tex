@@ -30,7 +30,8 @@ Gli attori principali dell'applicazione sono i seguenti:
 
 \subsection{Funzionalità}
 
-\textit{Grigo Verde} offre le seguenti funzionalità:
+Di seguito sono riportate le funzionalità offerte da \textit{Grigo Verde}:
+
 \begin{enumerate}
 	\item \textbf{Autenticazione}: login tramite username e password e quindi
 	      riconoscimento dell'utente da parte del sistema; Disponibile a:
@@ -55,87 +56,76 @@ Gli attori principali dell'applicazione sono i seguenti:
 	      \end{itemize}
 
 	\item \textbf{Visualizzazione degli spazi registrati nel sistema}, con foto
-	      descrizione, numero di posti; Disponibile a:
+	      e nome dello spazio; Disponibile a:
 	      \begin{itemize}
 		      \item Visitatore;
 		      \item Utente docente;
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Filtraggio degli spazi per tipo}, ad esempio per aule o per
-	      aree ricreative; Disponibile a:
+	\item \textbf{Filtraggio degli spazi}, per tipo e per disponibilità;
+	      Disponibile a:
 	      \begin{itemize}
 		      \item Visitatore;
 		      \item Utente docente;
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Filtraggio degli spazi per disponibilità}, tramite selezione
-	      del giorno e dell'intervallo temporale; Disponibile a:
+	\item \textbf{Visualizzazione delle dettaglio di uno spazio}:
+	      nome, tipo, descrizione, numero di tavoli, immagine, orari di
+	      apertura e prenotazioni già effettuate; Disponibile a:
 	      \begin{itemize}
 		      \item Visitatore;
 		      \item Utente docente;
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Visualizzazione delle disponibilità orarie di uno spazio}
-	      sulla base del mese selezionato; Disponibile a:
+	\item \textbf{Inserimento prenotazione}:
+	      sono richiesti il giorno e l'orario della prenotazione oltre allo
+	      spazio, infine l'utente può inserire una nota opzionale; Disponibile
+	      a:
 	      \begin{itemize}
-		      \item Visitatore;
 		      \item Utente docente;
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Prenotazione di uno spazio disponibile}, specificando il
-	      giorno da calendario e l'orario; Disponibile a:
-	      \begin{itemize}
-		      \item Utente docente;
-	      \end{itemize}
-
-	\item \textbf{Annullamento prenotazione da lui creata in precedenza};
+	\item \textbf{Annullamento prenotazione}:
 	      Disponibile a:
 	      \begin{itemize}
 		      \item Utente docente;
+		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Modifica di qualunque prenotazione}: Disponibile a:
+	\item \textbf{Modifica prenotazione}: Disponibile a:
+	      \begin{itemize}
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
+
+	\item \textbf{Modifca delle informazioni personali}: modifica di nome,
+	      cognome e password;
+	      Disponibile a:
+	      \begin{itemize}
+		      \item Utente docente;
+		      \item Utente amministratore;
+	      \end{itemize}
+
+	\item \textbf{Creazione di un nuovo spazio}: disponibile a:
 	      \begin{itemize}
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Inserimento di prenotazioni periodiche}: inserimento di
-	      prenotazioni che si ripetono in un intervallo di tempo; Disponibile a:
+	\item \textbf{Modifica di uno spazio}: disponibile a:
 	      \begin{itemize}
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Creazione di un nuovo spazio}, con inserimento di immagini,
-	      posizione, nome, tipo, descrizione, numero di tavoli; Disponibile a:
+	\item \textbf{Eliminazione di uno spazio}: disponibile a:
 	      \begin{itemize}
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Modifica di uno spazio}: inserimento/eliminazione di immagini,
-	      modifica posizione, nome, tipo, descrizione, numero di tavoli; Disponibile
-	      a:
-	      \begin{itemize}
-		      \item Utente amministratore;
-	      \end{itemize}
-
-	\item \textbf{Eliminazione di uno spazio}: Disponibile a:
-	      \begin{itemize}
-		      \item Utente amministratore;
-	      \end{itemize}
-
-	\item \textbf{Inserimento disponibilità spazio}: inserimento in un
-	      calendario settimanale della disponibilità oraria; Disponibile a:
-	      \begin{itemize}
-		      \item Utente amministratore;
-	      \end{itemize}
-
-	\item \textbf{Creazione di un nuovo tipo di spazio}, con specifica del nome
-	      e della possibilità o meno di specificare il numero di posti; Disponibile
-	      a:
+	\item \textbf{Modifica degli orari di apertura di uno spazio}: disponibile a:
 	      \begin{itemize}
 		      \item Utente amministratore;
 	      \end{itemize}
@@ -153,39 +143,14 @@ Gli attori principali dell'applicazione sono i seguenti:
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Eliminazione utente}: Disponibile a:
+	\item \textbf{Eliminazione utente}: disponibile a:
 	      \begin{itemize}
 		      \item Utente amministratore;
 	      \end{itemize}
 
-	\item \textbf{Modifica utente}: modifica di nome, cognome e/o ruolo;
+	\item \textbf{Modifica utente}: modifica di nome, cognome, ruolo e password;
 	      Disponibile a:
 	      \begin{itemize}
 		      \item Utente amministratore;
 	      \end{itemize}
 \end{enumerate}
-
-\subsection{SEO}
-
-Innanzitutto, abbiamo immaginao il \textit{search intent} dei nostri utenti.
-Abbiamo identificato le seguenti \textit{query} che potrebbero essere
-utilizzate per cercare il nostro sito:
-\begin{itemize}
-	\item \textbf{Grigo Verde};
-	\item \textbf{Liceo Grigoletti};
-	\item \textbf{Liceo Scientifico Pordenone};
-	\item \textbf{Spazi verdi};
-	\item \textbf{Aule all'aperto};
-\end{itemize}
-
-A partire da queste \textit{query}, abbiamo scritto i tag \texttt{<title>},
-\texttt{<meta name="description">} e \texttt{<meta name="keywords">} delle
-pagine del nostro sito. Si noti, che queste informazioni non sono aggiunte alle
-pagine che richiedono l'autenticazione, in quanto non sono indicizzate dai
-motori di ricerca e non sono accessibili ai visitatori non autenticati. In
-aggiunta, sono state aggiunte keyword specifiche per ogni pagina, in modo da
-migliorare il posizionamento nei motori di ricerca.\\
-Finalmente, sono state adottate soluzioni tecniche, come la
-divisione tra la struttura, la presentazione ed il comportamento per ridurre il
-peso delle pagine e migliorare il \textit{ranking} nei motori di ricerca. Le
-soluzioni tecniche adottate sono spiegate nel dettaglio nelle sezioni dedicate.
