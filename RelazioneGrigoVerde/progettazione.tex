@@ -178,14 +178,14 @@ il sovraccarico cognitivo, sono state adottate diverse misure:
 
 	\item \textbf{Link}: tutti i link sono sottolineati e i link non visitati
 	      hanno il classico blu, mentre i link visitati sono di colore verde
-	      scuro. L'unica eccezione è il logo il logo del sito in alto a sinistra
+	      scuro. L'unica eccezione è il logo del sito in alto a sinistra
 	      che è un link che riporta alla home. Tuttavia, all'interno del menù è
 	      presente il collegamento alla home, quindi non riteniamo che possa
 	      creare confusione;
 
 	\item \textbf{Vai al contenuto}: implementazione della funzionalità "vai al
 	      contenuto" per migliorare l'accessibilità agli utenti che utilizzano
-	      screen reader oppure che navigano dal telefono;
+	      screen reader;
 
 	\item \textbf{Torna su}: aggiunta del pulsante "torna su" alla fine di
 	      ogni pagina, che diventa visibile scorrendo verso il basso,
@@ -193,14 +193,16 @@ il sovraccarico cognitivo, sono state adottate diverse misure:
 	      Il pulsante non è visibile negli schermi grandi;
 
 	\item \textbf{Linguaggio semplice}: abbiamo adottato un linguaggio adatto al
-	      target di utenza; per esempio, all'inizio avevamo usato il termine
-	      "dashboard" per indicare la homepage di un utente autenticato, tuttavia
+	      target di utenza; per esempio, all'inizio della progettazione avevamo usato il termine
+	      "dashboard" per indicare la pagina dedicata ad un utente autenticato, tuttavia
 	      ci siamo resi conto che poteva creare confusione, quindi abbiamo
 	      cambiato il termine in "cruscotto";
 
 	\item \textbf{Alternative testuali}: tutte le immagini hanno un'alternativa
 	      testuale che permetta di comunicare il contenuto dell'immagine a chi
-	      non è in grado di vederla;
+	      non è in grado di vederla; sono presenti delle alternative testuali vuote
+		  per le immagini che non aggiungono informazioni utili a quanto già presente
+		  (per esempio un immagine simile ad una precedente con una prospettiva diversa);
 
 	\item \textbf{Attributo \texttt{lang}}: l'attributo \texttt{lang} è stato
 	      aggiunto in ogni pagina per indicare la lingua principale del sito,
@@ -218,8 +220,9 @@ il sovraccarico cognitivo, sono state adottate diverse misure:
 
 	\item \textbf{Tag \texttt{aria-label} e \texttt{aria-describedby}}: dove
 	      necessario, sono stati aggiunti attributi \texttt{aria-label} e
-	      \texttt{aria-describedby} per comunicare informazioni aggiuntive agli
-	      screen reader;
+	      \texttt{aria-describedby} per comunicare informazioni aggiuntive o 
+		  per chiarezza, mentre \texttt{aria-hidden} è stato impiegato per nascondere
+		  allo screen reader elementi che potevano creare confusione;
 
 	\item \textbf{Creazione e rispetto di convenzioni interne al sito}.
 \end{itemize}
@@ -304,7 +307,9 @@ Di seguito sono descritte le pagine del sito:
 		            credenziali dell'utente autenticato, compresa la password;
 
 		      \item \textbf{Nuovo Spazio}: un amministratore può accedere a
-		            questa pagina per creare un nuovo spazio.
+		            questa pagina per creare un nuovo spazio. Con l'aggiunta di un 
+					immagine è richiesta una descrizione che funge da testo alternativo
+					che comparirà nel sito per garantirne l'accessibilità;
 
 		      \item \textbf{Nuova prenotazione}: si accede a questa pagina per
 		            effettuare una nuova prenotazione. Si noti che un
